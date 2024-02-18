@@ -8,6 +8,8 @@
     <!-- daisyUI and tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style.css sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -49,7 +51,7 @@
                     <h3 class="text-7xl font-extrabold text-[#1DD100]">P Paribahan</h3>
                     <p class="text-xl text-[#FFFFFF]">Yes, you can run unit tests and view the results directly within
                         the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn bg-[#1DD100] text-black">Buy Ticket</button>
+                    <button onclick="jumpToOtherSection()" class="btn bg-[#1DD100] text-black">Buy Ticket</button>
                 </div>
             </div>
         </section>
@@ -87,7 +89,7 @@
             <button class=" btn btn-outline  hover:bg-[#1DD100] mt-16 mb-32">See All Offer</button>
         </section>
 
-        <section>
+        <section id="ph-paribahan">
             <div class="w-11/12 mx-auto text-center">
                 <h2>P.H Paribahan</h2>
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
@@ -152,56 +154,56 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-5 gap-3 py-4 text-center">
-                    <div>A</div>
-                    <div class="chair">A1</div>
-                    <div class="chair">A2</div>
-                    <div class="chair">A3</div>
-                    <div class="chair">A4</div>
-                    <div>B</div>
-                    <div class="chair">B1</div>
-                    <div class="chair">B2</div>
-                    <div class="chair">B3</div>
-                    <div class="chair">B4</div>
-                    <div>C</div>
-                    <div class="chair">C1</div>
-                    <div class="chair">C2</div>
-                    <div class="chair">C3</div>
-                    <div class="chair">C4</div>
-                    <div>D</div>
-                    <div class="chair">D1</div>
-                    <div class="chair">D2</div>
-                    <div class="chair">D3</div>
-                    <div class="chair">D4</div>
-                    <div>E</div>
-                    <div class="chair">E1</div>
-                    <div class="chair">E2</div>
-                    <div class="chair">E3</div>
-                    <div class="chair">E4</div>
-                    <div>F</div>
-                    <div class="chair">F1</div>
-                    <div class="chair">F2</div>
-                    <div class="chair">F3</div>
-                    <div class="chair">F4</div>
-                    <div>G</div>
-                    <div class="chair">G1</div>
-                    <div class="chair">G2</div>
-                    <div class="chair">G3</div>
-                    <div class="chair">G4</div>
-                    <div>H</div>
-                    <div class="chair">H1</div>
-                    <div class="chair">H2</div>
-                    <div class="chair">H3</div>
-                    <div class="chair">H4</div>
-                    <div>I</div>
-                    <div class="chair">I1</div>
-                    <div class="chair">I2</div>
-                    <div class="chair">I3</div>
-                    <div class="chair">I4</div>
-                    <div>J</div>
-                    <div class="chair">J1</div>
-                    <div class="chair">J2</div>
-                    <div class="chair">J3</div>
-                    <div class="chair">J4</div>
+                    <button>A</button>
+                    <button class="chair btn">A1</button>
+                    <button class="chair btn">A2</button>
+                    <button class="chair btn">A3</button>
+                    <button class="chair btn">A4</button>
+                    <button>B</button>
+                    <button class="chair btn">B1</button>
+                    <button class="chair btn">B2</button>
+                    <button class="chair btn">B3</button>
+                    <button class="chair btn">B4</button>
+                    <button>C</button>
+                    <button class="chair btn">C1</button>
+                    <button class="chair btn">C2</button>
+                    <button class="chair btn">C3</button>
+                    <button class="chair btn">C4</button>
+                    <button>D</button>
+                    <button class="chair btn">D1</button>
+                    <button class="chair btn">D2</button>
+                    <button class="chair btn">D3</button>
+                    <button class="chair btn">D4</button>
+                    <button>E</button>
+                    <button class="chair btn">E1</button>
+                    <button class="chair btn">E2</button>
+                    <button class="chair btn">E3</button>
+                    <button class="chair btn">E4</button>
+                    <button>F</button>
+                    <button class="chair btn">F1</button>
+                    <button class="chair btn">F2</button>
+                    <button class="chair btn">F3</button>
+                    <button class="chair btn">F4</button>
+                    <button>G</button>
+                    <button class="chair btn">G1</button>
+                    <button class="chair btn">G2</button>
+                    <button class="chair btn">G3</button>
+                    <button class="chair btn">G4</button>
+                    <button>H</button>
+                    <button class="chair btn">H1</button>
+                    <button class="chair btn">H2</button>
+                    <button class="chair btn">H3</button>
+                    <button class="chair btn">H4</button>
+                    <button>I</button>
+                    <button class="chair btn">I1</button>
+                    <button class="chair btn">I2</button>
+                    <button class="chair btn">I3</button>
+                    <button class="chair btn">I4</button>
+                    <button>J</button>
+                    <button class="chair btn">J1</button>
+                    <button class="chair btn">J2</button>
+                    <button class="chair btn">J3</button>
+                    <button class="chair btn">J4</button>
 
                 </div>
             </div>
@@ -222,13 +224,7 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody">
-                                <!-- row  -->
-                                <tr>
-                                    <td>Cy Ganderton</td>
-                                    <td>Quality Control Specialist</td>
-                                    <td>Blue</td>
-                                </tr>
-                                <!-- row  -->
+                                <!-- seat name class price append  -->
                             </tbody>
                             
                             <tfoot class="border border-t-gray-400">
@@ -239,7 +235,7 @@
                     </div>
 
                     <div class="flex gap-5 my-5 justify-between">
-                        <input class="flex-1" type="text" name="" id="coupon" placeholder="Have any coupon?"> <button onclick="coupon()"  class="btn bg-[#1DD100]">Apply</button>
+                        <input class="flex-1" type="text" name="" id="coupon" placeholder="Have any coupon?"> <button id="coupon-btn" class="btn bg-[#1DD100]">Apply</button>
                     </div>
 
                     <div class="flex justify-between">
@@ -269,7 +265,8 @@
     </main>
 
     <footer>
-
+        <!-- <button class="btn btn-primary" disabled>Text disabled</button>
+        <div class="bg-[#1DD100]" disabled>Text disabled div</div> -->
     </footer>
 
 
