@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="flex"><img src="images/seat-green-filled.png" alt=""><span id="seat-left">40</span>seat
+                                <button class="flex text-[#1DD100]"><img src="images/seat-green-filled.png" alt=""><span id="seat-left">40</span>seat
                                     left</button>
                             </div>
                         </div>
@@ -153,55 +153,55 @@
                 </div>
                 <div class="grid grid-cols-5 gap-3 py-4 text-center">
                     <div>A</div>
-                    <div>A1</div>
-                    <div>A2</div>
-                    <div>A3</div>
-                    <div>A4</div>
+                    <div class="chair">A1</div>
+                    <div class="chair">A2</div>
+                    <div class="chair">A3</div>
+                    <div class="chair">A4</div>
                     <div>B</div>
-                    <div>B1</div>
-                    <div>B2</div>
-                    <div>B3</div>
-                    <div>B4</div>
+                    <div class="chair">B1</div>
+                    <div class="chair">B2</div>
+                    <div class="chair">B3</div>
+                    <div class="chair">B4</div>
                     <div>C</div>
-                    <div>C1</div>
-                    <div>C2</div>
-                    <div>C3</div>
-                    <div>C4</div>
+                    <div class="chair">C1</div>
+                    <div class="chair">C2</div>
+                    <div class="chair">C3</div>
+                    <div class="chair">C4</div>
                     <div>D</div>
-                    <div>D1</div>
-                    <div>D2</div>
-                    <div>D3</div>
-                    <div>D4</div>
+                    <div class="chair">D1</div>
+                    <div class="chair">D2</div>
+                    <div class="chair">D3</div>
+                    <div class="chair">D4</div>
                     <div>E</div>
-                    <div>E1</div>
-                    <div>E2</div>
-                    <div>E3</div>
-                    <div>E4</div>
+                    <div class="chair">E1</div>
+                    <div class="chair">E2</div>
+                    <div class="chair">E3</div>
+                    <div class="chair">E4</div>
                     <div>F</div>
-                    <div>F1</div>
-                    <div>F2</div>
-                    <div>F3</div>
-                    <div>F4</div>
+                    <div class="chair">F1</div>
+                    <div class="chair">F2</div>
+                    <div class="chair">F3</div>
+                    <div class="chair">F4</div>
                     <div>G</div>
-                    <div>G1</div>
-                    <div>G2</div>
-                    <div>G3</div>
-                    <div>G4</div>
+                    <div class="chair">G1</div>
+                    <div class="chair">G2</div>
+                    <div class="chair">G3</div>
+                    <div class="chair">G4</div>
                     <div>H</div>
-                    <div>H1</div>
-                    <div>H2</div>
-                    <div>H3</div>
-                    <div>H4</div>
+                    <div class="chair">H1</div>
+                    <div class="chair">H2</div>
+                    <div class="chair">H3</div>
+                    <div class="chair">H4</div>
                     <div>I</div>
-                    <div>I1</div>
-                    <div>I2</div>
-                    <div>I3</div>
-                    <div>I4</div>
+                    <div class="chair">I1</div>
+                    <div class="chair">I2</div>
+                    <div class="chair">I3</div>
+                    <div class="chair">I4</div>
                     <div>J</div>
-                    <div>J1</div>
-                    <div>J2</div>
-                    <div>J3</div>
-                    <div>J4</div>
+                    <div class="chair">J1</div>
+                    <div class="chair">J2</div>
+                    <div class="chair">J3</div>
+                    <div class="chair">J4</div>
 
                 </div>
             </div>
@@ -216,46 +216,35 @@
                             <thead>
                                 <tr>
                                     
-                                    <th>Seat <span id="seat">0</span></th>
+                                    <th>Seat <span id="seat" class="bg-[#1DD100] p-1 rounded">0</span></th>
                                     <th>Class</th>
                                     <th>Price</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <!-- row 1 -->
+                            <tbody id="tbody">
+                                <!-- row  -->
                                 <tr>
                                     <td>Cy Ganderton</td>
                                     <td>Quality Control Specialist</td>
                                     <td>Blue</td>
                                 </tr>
-                                <!-- row 2 -->
-                                <tr>
-                                    <td>Hart Hagerty</td>
-                                    <td>Desktop Support Technician</td>
-                                    <td>Purple</td>
-                                </tr>
-                                <!-- row 3 -->
-                                <tr>
-                                    <td>Brice Swyre</td>
-                                    <td>Tax Accountant</td>
-                                    <td>Red</td>
-                                </tr>
+                                <!-- row  -->
                             </tbody>
                             
                             <tfoot class="border border-t-gray-400">
-                                <tr><td>Total Price</td> <td class="col-span-2 text-right">BDT <span id="total-price">1100</span></td> </tr>
+                                <tr><td>Total Price</td> <td class="col-span-2 text-right">BDT <span id="total-price">0</span></td> </tr>
                                 
                             </tfoot>
                         </table>
                     </div>
 
                     <div class="flex gap-5 my-5 justify-between">
-                        <input class="flex-1" type="text" name="" id="coupon" placeholder="Have any coupon?"> <button  class="btn bg-[#1DD100]">Apply</button>
+                        <input class="flex-1" type="text" name="" id="coupon" placeholder="Have any coupon?"> <button onclick="coupon()"  class="btn bg-[#1DD100]">Apply</button>
                     </div>
 
                     <div class="flex justify-between">
                         <h2>Grand Total</h2>
-                        <h2>BDT <span id="grand-total">1100</span></h2> 
+                        <h2>BDT <span id="grand-total">0</span></h2> 
                     </div>
                     <div class="my-5">
                         <form action="">
@@ -290,6 +279,7 @@
 
     <!-- javascripts file -->
     <script src="scripts.js"></script>
+    <script src="utility.js"></script>
 </body>
 
 </html>
