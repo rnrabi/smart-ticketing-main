@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="flex"><img src="images/seat-green-filled.png" alt=""><span>40</span>seat
+                                <button class="flex"><img src="images/seat-green-filled.png" alt=""><span id="seat-left">40</span>seat
                                     left</button>
                             </div>
                         </div>
@@ -216,7 +216,7 @@
                             <thead>
                                 <tr>
                                     
-                                    <th>Seat</th>
+                                    <th>Seat <span id="seat">0</span></th>
                                     <th>Class</th>
                                     <th>Price</th>
                                 </tr>
@@ -243,11 +243,37 @@
                             </tbody>
                             
                             <tfoot class="border border-t-gray-400">
-                                <tr><td>Total</td> <td class="col-span-2 text-right">200</td> </tr>
+                                <tr><td>Total Price</td> <td class="col-span-2 text-right">BDT <span id="total-price">1100</span></td> </tr>
                                 
                             </tfoot>
                         </table>
                     </div>
+
+                    <div class="flex gap-5 my-5 justify-between">
+                        <input class="flex-1" type="text" name="" id="coupon" placeholder="Have any coupon?"> <button  class="btn bg-[#1DD100]">Apply</button>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <h2>Grand Total</h2>
+                        <h2>BDT <span id="grand-total">1100</span></h2> 
+                    </div>
+                    <div class="my-5">
+                        <form action="">
+                            Passenger Name* <br>
+                            <input class="w-full p-2 mb-4" type="text" name="" id="passenger-name" placeholder="Enter your name">
+                            Phone Number* <br>
+                            <input class="w-full p-2 mb-4" type="number" name="" id="phone-number" placeholder="Enter your phone number">
+                            Email iD* <br>
+                            <input class="w-full p-2 mb-4" type="email" name="" id="email" placeholder="Enter your email">
+                            <button class="btn  bg-[#1DD100] w-full">Next</button>
+                        </form>
+                    </div>
+
+                    <div class="flex justify-between underline">
+                        <a href="#">Term & Condition</a>
+                        <a href="">Cancellation policy</a>
+                    </div>
+
                 </div>
             </div>
         </section>
