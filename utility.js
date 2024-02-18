@@ -42,13 +42,13 @@ function coupon(event) {
         setInnerTextByIdValue('grand-total', restOfDiscount);
         event.target.parentNode.innerHTML = ''
     }
-    else if(inputText == 'Couple 20') {
+    else if (inputText == 'Couple 20') {
         const discountFifty = grandTotal * 0.20;
         const restOfDiscount = grandTotal - discountFifty;
         setInnerTextByIdValue('grand-total', restOfDiscount);
         event.target.parentNode.innerHTML = ''
     }
-    else{
+    else {
         alert('Please input right coupon code');
     }
 }
@@ -56,4 +56,5 @@ function coupon(event) {
 function jumpToOtherSection() {
     const section = document.getElementById('ph-paribahan');
     section.scrollIntoView({ behavior: 'smooth' });
-  }
+}
+
