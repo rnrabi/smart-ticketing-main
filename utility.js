@@ -35,15 +35,20 @@ function setInnerTextByIdValue(id, value) {
 function coupon(event) {
     const inputText = getInputValueById('coupon');
     const grandTotal = getTextValueById('grand-total');
+    const discountDiv = document.getElementById('discount-row');
 
     if (inputText == 'NEW15') {
         const discountFifty = grandTotal * 0.15;
+        setInnerTextByIdValue('discount-price', discountFifty);
+        discountDiv.classList.remove('hidden');
         const restOfDiscount = grandTotal - discountFifty;
         setInnerTextByIdValue('grand-total', restOfDiscount);
         event.target.parentNode.innerHTML = ''
     }
     else if (inputText == 'Couple 20') {
         const discountFifty = grandTotal * 0.20;
+        setInnerTextByIdValue('discount-price', discountFifty);
+        discountDiv.classList.remove('hidden');
         const restOfDiscount = grandTotal - discountFifty;
         setInnerTextByIdValue('grand-total', restOfDiscount);
         event.target.parentNode.innerHTML = ''

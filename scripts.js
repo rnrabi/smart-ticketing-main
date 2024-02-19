@@ -7,6 +7,7 @@ for (const seat of seats) {
     seat.addEventListener('click', function (event) {
 
         if (count > 4) {
+            alert('You have selected alrady four seats')
             return;
         }
         else {
@@ -40,7 +41,7 @@ const nextBtn = document.getElementById('next');
 
 phone.addEventListener('keyup', function (event) {
     const number = event.target.value;
-    if (number.length > 0) {
+    if ((number.length > 0) && (count > 1)) {
         nextBtn.removeAttribute('disabled');
     }
 })
