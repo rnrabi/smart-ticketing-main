@@ -26,6 +26,12 @@ for (const seat of seats) {
             // -------------------------------------------------------  
             setInnerTextByIdValue('grand-total', totalPrice);
             // -----------------------------------------------------
+            const nextBtn = document.getElementById('next');
+            const phoneInput = document.getElementById('phone-number');
+            const phoneNumber = phoneInput.value;
+            if ((phoneNumber.length > 0) && (count > 1)) {
+                nextBtn.removeAttribute('disabled');
+            }
         }
 
     })
